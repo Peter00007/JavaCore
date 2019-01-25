@@ -3,7 +3,7 @@ package main.java.com.javacore.chapter01;
 /**
  * Created by User on 25.01.2019.
  */
-public class example5 {
+public class Example5 {
     public static void main(String[] args) {
         outher: for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
