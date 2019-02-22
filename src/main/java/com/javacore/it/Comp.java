@@ -11,14 +11,7 @@ class Comp implements Comparator<Employee> {
             return -1;
         else if (param1.averageMonthlySalary() < param2.averageMonthlySalary())
             return 1;
-        else if (param1.averageMonthlySalary() == param2.averageMonthlySalary()) {
-            if (param1.getName().compareTo(param2.getName()) > 0)
-                return 1;
-            else if (param1.getName().compareTo(param2.getName()) < 0)
-                return -1;
-            else
-                return 0;
-        }
-        return 0;
+        else
+            return param1.getName().compareTo(param2.getName());
     }
 }

@@ -15,25 +15,23 @@ public class main {
         //create Set collection
         Set<Employee> set = new TreeSet<>(new Comp());
 
-        set.add(new FixedPayment(1, "Petro", 200));
-        set.add(new HourPayment(2, "Andriy", 10));
-        set.add(new FixedPayment(3, "Yura", 200));
-        set.add(new FixedPayment(4, "Petro", 300));
-        set.add(new FixedPayment(5, "Dima", 2500));
-        set.add(new FixedPayment(6, "Artyr", 30066));
-        set.add(new FixedPayment(7, "Artem", 30043));
-        set.add(new FixedPayment(8, "Artem", 3003));
-        set.add(new HourPayment(9, "Dima", 12));
-        set.add(new HourPayment(10, "Andriy", 11));
-        set.add(new HourPayment(11, "Andriy", 15));
-        set.add(new HourPayment(12, "Andriy", 20));
+        set.add(new FixedPayment(1,"Petro", 200));
+        set.add(new HourPayment(2,"Andriy", 10));
+        set.add(new FixedPayment(3,"Yura", 200));
+        set.add(new FixedPayment(4,"Petro", 300));
+        set.add(new FixedPayment(5,"Dima", 2500));
+        set.add(new FixedPayment(6,"Artyr", 30066));
+        set.add(new FixedPayment(7,"Artem", 30043));
+        set.add(new FixedPayment(8,"Artem", 3003));
+        set.add(new HourPayment(9,"Dima", 12));
+        set.add(new HourPayment(10,"Andriy", 11));
+        set.add(new HourPayment(11,"Andriy", 15));
+        set.add(new HourPayment(12,"Andriy", 20));
 
         //output of employees data
         for (Employee element : set) {
             System.out.println(element.getId() + " " + element.getName() + " " + element.averageMonthlySalary());
         }
-
-        System.out.println("---------------------------");
 
         //creating an iterator for passing through the collection
         Iterator<Employee> value = set.iterator();
@@ -41,6 +39,7 @@ public class main {
         int i = 0;
 
         //output of the first five employees
+        System.out.println("\nProblem a:");
         while (i < 5 && value.hasNext()) {
             Employee str = value.next();
             System.out.println(str.getId() + " " + str.getName() + " " + str.averageMonthlySalary());
@@ -49,9 +48,8 @@ public class main {
 
         i = 0;
 
-        System.out.println("---------------------------");
-
         //output of the last three employees
+        System.out.println("\nProblem b:");
         Iterator<Employee> count = set.iterator();
         while (count.hasNext()) {
             Employee str = count.next();

@@ -9,18 +9,9 @@ public class HourPayment extends Employee {
         this.hoursalary = hoursalary;
     }
 
-    public int getHoursalary() {
-        return hoursalary;
-    }
-
-    public void setHoursalary(int hoursalary) {
-        this.hoursalary = hoursalary;
-    }
-
     //a method that calculates the average monthly salary
     @Override
     public double averageMonthlySalary() {
-        double averagesalary = 20.8 * 8 * hoursalary;
-        return averagesalary;
+        return 20.8 * 8 * hoursalary;
     }
 }
