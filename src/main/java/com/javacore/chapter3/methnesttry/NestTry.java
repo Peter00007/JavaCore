@@ -1,4 +1,4 @@
-package main.java.com.javacore.chapter3.MethNestTry;
+package main.java.com.javacore.chapter3.methnesttry;
 
 /**
  * Created by User on 20.02.2019.
