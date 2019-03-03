@@ -1,4 +1,4 @@
-package main.java.com.javacore.chapter3;
+package main.java.com.javacore.chapter03;
 
 /**
  * Created by User on 20.02.2019.

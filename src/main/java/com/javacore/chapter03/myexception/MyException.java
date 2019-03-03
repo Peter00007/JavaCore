@@ -1,4 +1,4 @@
-package main.java.com.javacore.chapter3.myexception;
+package main.java.com.javacore.chapter03.myexception;
 
 /**
  * Created by User on 21.02.2019.
